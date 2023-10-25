@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%
+% DOCUMENTCLASS %
+%%%%%%%%%%%%%%%%%
+\documentclass[
+  fontsize=12pt,
+  fleqn,
+  final
+]{scrartcl}
+
+%%%%%%%%%%%%%%%%
+% CUSTOM STYLE %
+%%%%%%%%%%%%%%%%
+\RequirePackage{preambule}
+
+%%%%%%%%%%%%
+% METADATA %
+%%%%%%%%%%%%
+\input{metadata.tex}
+
+%%%%%%%%%%%%
+% DOCUMENT %
+%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%
+% Title page %
+%%%%%%%%%%%%%%
+\maketitle{}
+
+%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY %
+%%%%%%%%%%%%%%%%
+\printbibliography[type=book,title={Books}]
+\printbibliography[type=article,title={Articles}]
+\printbibliography[type=online,title={Unpublished}]
+\printbibliography[type=incollection,title={Incollection}]
+\printbibliography[type=inproceedings,title={Inproceedings}]
+\printbibliography[type=thesis,title={Ph.D. Thesis}]
+
+\end{document}
