@@ -18,6 +18,6 @@ clean-pdf:
 clean-aux:
 	rm -f *.bbl *.aux *.log *.bcf *.blg *.out *.run.xml *.toc *.fls *.fdb_latexmk *.synctex.gz
 clean: clean-pdf clean-aux
-quit-tex: move clean-pdf clean-aux
+quit-tex: move clean
 
 .PHONY: move clean-pdf clean-aux quit-tex clean 
