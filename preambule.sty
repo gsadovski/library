@@ -116,6 +116,15 @@
 
 \DeclareFieldFormat{file}{\href{#1}{\textbf{Open file}}}
 
+\defbibcheck{phdthesis}{%
+  \iffieldequalstr{type}{phdthesis}
+  {}
+  {\skipentry}}
+\defbibcheck{mathesis}{%
+  \iffieldequalstr{type}{mathesis}
+  {}
+  {\skipentry}}
+
 \nocite{*}
 
 %%%%%%%%%%%%%%%%
@@ -141,6 +150,12 @@
 \newcommand{\vev}[1]{
   \ifmmode\langle#1\rangle\else\textlangle#1\textrangle\fi
 }
+
+%%%%%%%%%%%%%%%%%%
+% MATH OPERATORS %
+%%%%%%%%%%%%%%%%%%
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\im}{im}
 
 %%%%%%%%%%%%%%
 % HYPERLINKS %
