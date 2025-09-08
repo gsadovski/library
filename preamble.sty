@@ -9,7 +9,7 @@
 % STYLE DECLATION %
 %%%%%%%%%%%%%%%%%%%
 
-\ProvidesPackage{preambule}
+\ProvidesPackage{preamble}
 
 %%%%%%%%
 % FONT %
@@ -25,6 +25,7 @@
 % and hyphenation patterns for
 % the declared languages.
 \usepackage[
+  brazilian,
   english
 ]{babel}
 
@@ -107,7 +108,9 @@
   doi=true,
   eprint=true,
   isbn=true,
-  url=false
+  url=false,
+  language=autobib,
+  autolang=other
 ]{biblatex}
 
 \addbibresource{library.bib}
